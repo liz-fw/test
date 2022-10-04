@@ -3,8 +3,13 @@
 
 plot(seq(1:30), (seq(1:30)^2), type='l')
 
-# clean dataset
-library(dplyr)
+square <- function(x) {
+  # inputs: x is a vector of values to be squared
+  y <- x^2
+  return(y)
+}
 
-df <- data.frame(cbind(seq(1,10), seq(2,20, 2)))
-
+# example:
+x <- seq(1:10)
+y <- square(x)
+plot(x, y, type = 'l')
