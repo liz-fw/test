@@ -13,3 +13,19 @@ square <- function(x) {
 x <- seq(1:10)
 y <- square(x)
 plot(x, y, type = 'l')
+
+
+# for erin's review -------------------------------------------------------
+
+# practicing a pull request
+# adding a new function here to generalize the power function
+
+my_power_function <- function(values, exponent) {
+  # vinputs are a vector of values and an exponent
+  output <- values^exponent
+  return(output)
+}
+
+# test new power function
+cubed <- my_power_function(x, 3)
+plot(x, cubed, type = 'l')
