@@ -21,7 +21,7 @@ plot(x, y, type = 'l')
 # adding a new function here to generalize the power function
 
 my_power_function <- function(values, exponent) {
-  # vinputs are a vector of values and an exponent
+  # inputs are a vector of values and an exponent
   output <- values^exponent
   return(output)
 }
