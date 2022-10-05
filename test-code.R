@@ -1,6 +1,9 @@
 # this is a test file
 # for practicing branches in git 
 
+# load libraries
+library(ggplot2)
+
 plot(seq(1:30), (seq(1:30)^2), type='l')
 
 square <- function(x) {
@@ -28,4 +31,4 @@ my_power_function <- function(values, exponent) {
 
 # test new power function
 cubed <- my_power_function(x, 3)
-plot(x, cubed, type = 'l')
+ggplot(aes(x=x, y=cubed)) + geom_line()
