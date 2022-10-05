@@ -31,4 +31,5 @@ my_power_function <- function(values, exponent) {
 
 # test new power function
 cubed <- my_power_function(x, 3)
-ggplot(aes(x=x, y=cubed)) + geom_line()
+df <- data.frame(cbind(x, cubed))
+ggplot(aes(x=x, y=cubed), data=df) + geom_line()
