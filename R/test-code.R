@@ -3,6 +3,7 @@
 
 # load libraries
 library(ggplot2)
+library(roxygen2)
 
 plot(seq(1:30), (seq(1:30)^2), type='l')
 
@@ -23,8 +24,16 @@ plot(x, y, type = 'l')
 # practicing a pull request
 # adding a new function here to generalize the power function
 
+#' Raise a vector of values to a power
+#' 
+#' @param values A vector.
+#' @param exponent A number.
+#' @return A numeric vector.
+#' @examples 
+#' my_power_function(seq(1,10), 2)
+#' my_power_function(seq(1,10), 3)
+#' @export
 my_power_function <- function(values, exponent) {
-  # inputs are a vector of values and an exponent
   output <- values^exponent
   return(output)
 }
