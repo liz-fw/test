@@ -5,6 +5,7 @@
 # load libraries
 library(ggplot2)
 library(roxygen2)
+library(testthat)
 
 #' Raise a vector of values to a power
 #' 
